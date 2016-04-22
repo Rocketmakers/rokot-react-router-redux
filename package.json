@@ -1,0 +1,39 @@
+{
+  "name": "rokot-react-router-redux",
+  "version": "0.1.0",
+  "description": "Rocketmakers Rokot Platform - react-router-redux wrapper for rendering on the server and in the browser.",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p source/tsconfig.json -d"
+  },
+  "keywords": [
+    "typescript",
+    "react",
+    "router",
+    "redux"
+  ],
+  "author": "developers@rocketmakers.com",
+  "license": "MIT",
+  "dependencies": {
+    "es6-promise": "^3.1.2",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.3.0",
+    "react-router-redux": "^4.0.2",
+    "redux": "^3.5.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.7"
+  },
+  "homepage": "https://github.com/Rocketmakers/rokot-react-router-redux",
+  "repository": {
+    "type": "git",
+    "url": "git://git@github.com:Rocketmakers/rokot-react-router-redux"
+  },
+  "bugs": {
+    "url": "https://github.com/Rocketmakers/rokot-react-router-redux/issues"
+  }
+}
