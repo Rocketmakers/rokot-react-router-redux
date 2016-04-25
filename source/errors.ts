@@ -1,6 +1,6 @@
 export declare type IError = Error;
 
-export module CustomErrors {
+export module ServerErrors {
   export declare class Error implements IError {
     name:string;
     message:string;
