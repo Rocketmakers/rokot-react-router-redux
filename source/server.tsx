@@ -7,7 +7,6 @@ import { CustomErrors } from "./errors";
 import { match, RouterContext } from "react-router";
 import { Promise } from "es6-promise";
 import { Provider } from "react-redux";
-import { ReduxConfig } from "./reduxConfig";
 
 export enum ServerResultType{
   Ok,
@@ -19,19 +18,6 @@ export enum ServerResultType{
 export interface IServerResult{
   type: ServerResultType;
   result?: string;
-}
-
-export class InitialStateScript extends React.Component<{initialState: any},{}>{
-  public render(): JSX.Element {
-    if (!this.props.initialState) {
-      return null;
-    }
-
-    return (
-      <script dangerouslySetInnerHTML={{__html:`window.${ReduxConfig.stateVariableName} = ${JSON.stringify(this.props.initialState)}`}}>
-      </script>
-    )
-  }
 }
 
 export class Server{
