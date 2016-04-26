@@ -33,7 +33,37 @@ typings install react redux -SA
 
 ## Server Example
 ```typescript
-// TODO
+import * as express from "express";
+import * as reducers from "./reducers";
+import { ExpressServer } from "rokot-react-router-redux";
+import { Home, Layout, Login } from "./views";
+import { middlewares } from "./middleware";
+
+var app = express();
+app.use(ExpressServer.renderIsomorphic(reducers, appFactory, routeFactory, middlewares))
+
+function appFactory(store: Redux.Store, child: JSX.Element): JSX.Element {
+    return (
+    <html lang="en">
+            <head>
+            </head>
+            <body>
+              <div id="host">
+              {this.props.children}
+              </div>
+            </body>
+          </html>
+    )
+}
+
+function routeFactory(store: Redux.Store): JSX.Element {
+    return (
+        <Route path="/" component={Layout}>
+            <IndexRoute component={Home}/>
+            <Route path="/login" component={Login} />
+        </Route>)
+}
+
 ```
 ## Browser Example
 
