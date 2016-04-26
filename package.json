@@ -1,6 +1,6 @@
 {
   "name": "rokot-react-router-redux",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Rocketmakers Rokot Platform - react-router-redux wrapper for rendering on the server and in the browser.",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "es6-promise": "^3.1.2",
+    "history": "^2.1.0",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-redux": "^4.4.5",
