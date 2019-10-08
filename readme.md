@@ -1,5 +1,7 @@
 # rokot-react-router-redux
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Rocketmakers/rokot-react-router-redux.svg)](https://greenkeeper.io/)
+
 Rokot - [Rocketmakers](http://www.rocketmakers.com/) TypeScript NodeJs Platform
 
 ## Introduction
